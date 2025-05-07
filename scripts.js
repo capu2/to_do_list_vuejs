@@ -23,7 +23,16 @@ const todosApp ={
             }
             
         }
-    }
+    },
+    beforeCreate() {
+        console.log(this.todos);
+    },
+    created() {
+        console.log(this.todos);
+    },
+    beforeUpdate() {
+        console.log(this.todos);
+    },
 };
 
 Vue.createApp(todosApp).mount('#app')
